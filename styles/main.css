@@ -70,6 +70,10 @@ header {
       grid-row: 4 / 5;
       margin: 2vw;
     }
+    
+    a {
+      color: black;
+    }
 
 
     .home-container {
