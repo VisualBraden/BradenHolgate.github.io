@@ -1,6 +1,3 @@
-align-self: center;
-
-
 body {
   font-family: 'Arimo', sans-serif;
   --whole-grid: 1/1/-1/-1;
@@ -18,89 +15,78 @@ header {
       margin: 0px;
       padding: 0px;
       height: 100vh;
-      width: 100vw;
     }
-
     .home-container {
-      
-      font-size: 22px;
+   
       width: 100%;
       height: 100%;
       display: grid;
-      grid-area: var(--whole-grid);
-      background-color: rgba(0, 0, 0, 0.55);
-
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 10% 5% 5% 1fr 1fr 5%;
+    
     }
 
     #background-vid {
       grid-area: var(--whole-grid);
-      width: 100vw;
-      height: 100vh;
+      min-width: 100%;
+      min-height: 100%;
       object-fit: cover;
+      z-index: -15;
+
     } 
 
     .head-1 {
       font-family: 'Bebas Neue', cursive;
-      grid-area: var(--whole-grid);
+      font-size: 4vw;
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
       display: grid;
       justify-content: center;
+      justify-self: center;
+      border-style: solid;
+      border-width: thin;
+      padding: 0em 0.5em 1em 0.5em;
 
     }
-    /*
+
+
     .head-2 {
-      grid-area: head-2;
+      font-size: 2vw;
       grid-column: 1 /3;
       grid-row: 2 / 3;
       justify-self: center;
-      margin: 1% 10% 10% 10%;
-      text-align: center;
+      justify-content: center;
+
     }
     .head-3 {
-      grid-area: head-3;
+      font-size: 1.5vw;
       grid-column: 1 /3;
       grid-row: 3 / 4;
       justify-self: center;
-      margin: 5% 10% 10% 10%;
-      padding: 2%;
-      text-align: center;
+      align-self: start;
     }
 
     footer {
-      grid-area: footer;
       grid-column: 1/3;
       grid-row: 6 / 7;
       justify-self: center;
-      font-size: 12px;
+      font-size: 0.8vw;
     }
 
     nav{
-      grid-area: nav;
-      grid-column: 1 / 3;
+      grid-column: 1 / 2;
       grid-row: 4 / 5;
-      margin: 15% 5% 5% 10%;
-      padding: 1% 5% 5% 2%;
+      margin: 2vw;
+      font-size: 1.75vw;
       border-style: none none none solid;
-      border-width: thin;
+      padding: 1em 1em 1em 1em;
+
     }
     
     a {
       color: black;
     }
 
-
-    .home-container {
-      position: relative;
-      font-size: 22px;
-      width: 100%;
-      height: 100%;
-      background: white;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 10% 5% 5% 1fr 1fr 5%;
-
-    }
-
-*/
   }
 
 /*------ larger screens desktops and laptops etc-------*/
