@@ -34,6 +34,7 @@ header {
     }
 
     .head-1 {
+      font-family: 'Bebas Neue', cursive;
       grid-area: head-1;
       grid-column: 1 / 3;
       grid-row: 1 / 2;
