@@ -4,11 +4,90 @@
   bottom: 0;
   min-width: 100%;
   min-height: auto;
-}
+} 
 
 body {
   font-family: 'Arimo', sans-serif;
 }
+
 header {
   font-family: 'Bebas Neue', cursive;
 }
+/* -----phones-------*/
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 1199px) {
+
+
+
+  }
+
+/*------ larger screens desktops and laptops etc-------*/
+
+@media screen
+  and (min-device-width:1200px) {
+
+    body {
+      margin: 0px;
+      padding: 0px;
+      height: 100vh;
+    }
+
+    .head-1 {
+      grid-area: head-1;
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      justify-self: center;
+      padding: 1vw
+    }
+    .head-2 {
+      grid-area: head-2;
+      grid-column: 1 /3;
+      grid-row: 2 / 3;
+      justify-self: center;
+      padding: 1vw
+    }
+    .head-3 {
+      grid-area: head-3;
+      grid-column: 1 /3;
+      grid-row: 3 / 4;
+      justify-self: center;
+      padding: 1vw
+    }
+
+    footer {
+      grid-area: footer;
+      grid-column: 1/3;
+      grid-row: 6 / 7;
+      justify-self: center;
+      font-size: 12px;
+    }
+
+    nav{
+      grid-area: nav;
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
+      margin: 2vw;
+    }
+
+
+    .home-container {
+      font-size: 22px;
+      width: 100%;
+      height: 100%;
+      background: white;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 10% 5% 5% 1fr 1fr 5%;
+      /*grid-template-areas:
+        "head-1 head-1"
+        "head-2 head-2"
+        "head-3 head-3"
+        "nav content"
+        "nav content"
+        "footer footer";*/
+
+    }
+
+
+  }
