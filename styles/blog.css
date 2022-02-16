@@ -15,7 +15,7 @@ a {
   .container-1 {
     margin: 0px;
     padding: 0px;
-
+    position: relative;
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: 0.05fr 0.9fr 0.05fr;
@@ -26,6 +26,8 @@ a {
   footer {
     grid-area: 3 / 1/ 4/ 4;
     justify-items: center;
+    position: absolute;
+    left: 43vw;
   }
 
   .container-2 {
@@ -85,6 +87,7 @@ a {
     }
 
     .container-1 {
+      position: relative;
       margin: 0px;
       padding: 0px;
       display: grid;
@@ -141,8 +144,9 @@ a {
     
     footer {
       grid-area: 3/1/4/4;
-      margin: auto;
-      padding: auto;
+      position:absolute;
+      left: 43vw;
+    
     }
 
   }

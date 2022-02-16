@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+  <head>
+    <title>Blog me baby one more time</title>
+    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <base href="https://braden-holgate.github.io/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head> 
+  
+  <body>
+    
+    <div class="container-1">
+      <header><a href="/index.html"><h4>Home</h4></a></header>
+      <div class="container-2">
+        <section class="blog-title"><h1>Tech Post</h1></section>
+        <section class="subtitle"><h2>What is the difference between relative, absolute and fixed position?</h2></section>
+        <date><p>16 Feb '22</p></date>
+        <article>
+          <h3>Fixed Postion</h3>
+          <p>
+            Fixed positioning is the simplest. You fix and elements position relative to the viewport.
+             There can be issues if this position forces more dynamically positioned elements into undesirable configurations or overlaps.
+          </p>
+          <h3>Relative Position</h3>
+          <p>
+            Relative positioning refers to how an element appears relative to its own position in the HTML document. So it is relative to itself.
+             This property will also place the element on top of any static element, so watch out. It gives you access to the z-index to dictate the order that
+              elements appear in but this has limitations.
+          </p>
+          <h3>Absolute Position</h3>
+          <p>
+            Absolute positioning is not done relative to itself but rather relative to the closest parent element with the property of “position: relative”. 
+            If it cannot find a parent with this property it will be relative to the HTML document, the page itself. It will move in a defined way relative to
+             that parent even as the parent moves. In this way, you must be aware that when using relative blog
+            positioning you will limit the possibilities in absolute positioning of any child. 
+             
+          </p>
+        </article>
+      </div>
+      <footer> 
+        <a href="/blog/learning-plan.html">next post</a>
+      </footer>
+    </div>
+
+    
+  </body>
+
+  
