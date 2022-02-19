@@ -74,6 +74,12 @@ a {
     padding:1vh 1vw 5vh 1vw;
   }
 
+  .stripped,
+  .unstripped {
+    max-width: 100%;
+    height: auto;
+  }
+
   }
 
 /*---------------full size devices-----------*/
@@ -147,6 +153,12 @@ a {
       position:absolute;
       left: 46vw;
     
+    }
+
+    .stripped,
+    .unstripped {
+      max-width: 100%;
+      height: auto;
     }
 
   }
