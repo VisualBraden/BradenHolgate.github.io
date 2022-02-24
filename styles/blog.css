@@ -54,6 +54,7 @@ a {
   .blog-title { 
     align-self: center;
     font-size:larger;
+    text-align: center;
   }
 
   .subtitle {
@@ -128,6 +129,7 @@ a {
     .blog-title { 
       align-self: center;
       font-size:larger;
+      text-align: center;
     }
 
     .subtitle {

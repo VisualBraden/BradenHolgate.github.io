@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+  <head>
+    <title>Blog me baby one more time</title>
+    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <base href="https://braden-holgate.github.io/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head> 
+  
+  <body>
+    
+    <div class="container-1">
+      <header><a href="/index.html"><h4>Home</h4></a></header>
+      <div class="container-2">
+        <section class="blog-title"><h1>Problem Solving - Technical Post</h1></section>
+        <section class="subtitle"><h2>The Good the Bad and the Instructive</h2></section>
+        <date><p>24 Feb '22</p></date>
+        <article>
+          <h3>The big block and how I plumbed it</h3>
+          <p>
+            When I was coding the fizzbuzz function I thought I had a good handle on switch statements. 
+            A switch statement is a neat tool that uses a very clear structure to execute a bit of code only if it matches what you want. 
+            This is a conditional statement. The bit of code will only run if it meets the condition. There are many methods that use conditional 
+            statements and some of them have specific rules about how and where you check that the condition is met. 
+            <br><br>
+            The classic conditional is the ‘if’ statement which looks like this:
+            <pre>
+              <code>
+if (sandwich is equal to tasty) {
+  eat the sandwich;
+}
+              </code>
+            </pre>
+          </p>
+          <p>
+            You can see that in the brackets after the statement ‘if’ you evaluate whether something matches the condition. 
+            Now sometimes if you have lots of different potential scenarios the if statements can get confusing. 
+            That’s where ‘switch’ statements come in handy, they look like this:
+          </p>
+          <pre>
+            <code>
+switch(Number.isInteger(num/3)) {
+  case true:
+    return "Fizz";
+}
+            
+switch(Number.isInteger(num/5)) {
+  case true:
+    return "Buzz";
+}
+            </code>
+          </pre>
+          <p>
+            You can see you give the statement something to check, and it will go through the cases looking for a match. This is nice and neat. 
+            <br>
+            When I was trying to use the switch statement, for some unknown reason, I treated the field where you state the case you are wanting to 
+            check like it was an ‘if’ statement. I put a statement to be evaluated in each case scenario. I was a bit confused because this seemed 
+            a bit too similar to if statements. In other words, I was blocked. 
+          </p>
+          <p>
+            <strong>How did I overcome?</strong> I stepped back and got a snack. Mmmhmm. By not being in front of my screen for a minute a bit of awareness crept in. 
+            Why was the switch statement looking like an if statement? When I got back to my desk I typed the question into pseudocode. This is kind 
+            of like the rubber ducky method, but telling it to the screen. I had read the switch statement documentation over a few times but missed 
+            the glaringly obvious. Now I saw it. The switch statement doesn’t evaluate an expression in each case. It just checks whether the case 
+            matches the condition in the head of the statement!
+          </p>
+          <p>
+            <strong>I felt a bit stupid.</strong> Not for mixing up switch statements with if statements, but for not tuning in to the feeling 
+            of “something is off - why is this like an if statement?”
+            I have learnt to be more attuned to that instinct. I have also learned that I need to move on to another problem-solving tactic much 
+            faster than I am naturally inclined to do. If I just sit and stare at the problem it is too easy for pieces of the puzzle to get 
+            mixed up and I drift for ages.
+            <br>
+            That’s the beauty of the framework, it gives you a path to follow.  
+          </p>
+          <h3>When I was a classy coder and not a block head</h3>
+          <p>
+            I was happy with my solution to the averaging function in JS-Gradebook. You can see it below:
+          </p>
+          <pre>
+            <code>
+function average(arr) {
+  return ((arr.reduce((acc, int) 
+  => acc + int, 0))/ arr.length)
+}
+            </code>
+          </pre>
+          <p>
+            It is a simple enough bit of logic, but there can be verbose solutions.
+            Mine utilised my knowledge of a reducing function that is built into the javascript language.
+            I also used a newly learned way of writing my own functions called arrow functions which needs far fewer words to write. 
+            This meant that my logic all fits on one clean line.
+            I used the .reduce method's documentation to ensure my syntax was correct. 
+            I felt great that I was getting the hang of the built-in methods and my ability to read documentation is strengthening. 
+          </p>
+          <p>
+            I learnt that the informative naming of variables is vital to not getting mixed in the syntax.
+            If your code is all “x, y, ! and >_+=”  it becomes very hard to read. The reduce method works by executing a function on your 
+            input and then returning that result to be used in the next round of calculations. You could name that returned result ‘x’ if you wanted. 
+            But then when you go to write the function that uses x you have to always think: “wait, what was x again, oh x is the returned result, 
+            and I only know that because of where it is placed.” Instead, I named it ‘acc’ short for accumulator, because that is what it does it 
+            accumulates the values of each round of calculations. So when I am writing the function out and using ‘acc’ I don’t have to think about 
+            what it represents.
+          </p>
+          <p>
+            I was also happy with my solution to superfizzbuzz. Using a neat built-in method to call the fizzbuzz function on each element of the 
+            input array.
+          </p>
+          <p>
+            That's all folks!
+          </p>
+        </article>
+      </div>
+      <footer> 
+        <!-- <a></a> -->
+      </footer>
+    </div>
+
+    
+  </body>
+
+  
