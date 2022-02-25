@@ -29,10 +29,10 @@ header {
 
     #background-vid {
       grid-area: var(--whole-grid);
-      justify-self: center;
-      align-self: end;
-      object-fit: fill;
+      justify-self: stretch ;
+      object-fit: cover;
       z-index: -1;
+      height: 100vh;
 
     } 
 
