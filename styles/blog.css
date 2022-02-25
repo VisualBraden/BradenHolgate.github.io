@@ -18,7 +18,7 @@ a {
     position: relative;
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 0.05fr 0.9fr 0.05fr;
+    grid-template-rows: 0.1fr 20fr 0.25fr;
     justify-items: center;
 
   }
@@ -99,7 +99,7 @@ a {
       padding: 0px;
       display: grid;
       grid-template-columns: 10% 80% 10%;
-      grid-template-rows: 0.05fr 0.9fr 0.05fr;
+      grid-template-rows: 0.1fr 20fr 0.25fr;
       justify-items: center;
 
     }
